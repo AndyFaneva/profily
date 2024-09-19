@@ -1,41 +1,73 @@
 <header>
-  <nav class="navbar navbar-expand-lg bg-noir ">
+  <nav class="navbar navbar-expand-lg bg-noir">
     <div class="container-fluid text-white">
       <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon text-white"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand" href="#">    <img src="/Fa.png" alt="Faneva's picture" class="pic">A.Fax</a>
+        <a class="navbar-brand"><img src="/Fa.png" alt="Faneva's picture" class="pic">A.Fax</a>
         <ul class="navbar-navv bf mb-2 mb-lg-0 ">
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active">Accueil</a>
+            <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" [routerLink]="['/portfolio']" routerLinkActive="active">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/info']" routerLinkActive="active">Contact</a>
+            <a class="nav-link" [routerLink]="['/info']" routerLinkActive="active">More</a>
           </li>
         </ul>
+      </div>
+      <div class="nav-brand1">
+        <h1>A.Fax<img src="/Fa.png" alt="Faneva's picture" class="pic"></h1>
       </div>
     </div>
   </nav>
 </header>
-<div class="container-fluid bg-bleu">
+<div class="container-fluid body bg-bleu">
   <router-outlet></router-outlet>
 </div>
-<footer>
-  <div class="reseau">
-    <a href="https:/facebook.com">Facebook</a>
-  <a href="https:/linkedin.com">Linkedin</a>
-  <a href="https:/github.com">GitHub</a>
-  </div>
-  <div class="copyright">
-    &copy;Faneva_ANDRIANAINA
-  </div>
-  <div class="adresse">
-    <a>Adresse</a>
-    <a href="https:/gmail.com">Mail</a>
-    <a>Numéro</a>
+
+<footer class="bg-black text-light py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <h5 >Navigation</h5>
+        <ul class="list-unstyled">
+          <li><a [routerLink]="['/home']" class="text-light">Home</a></li>
+          <li><a [routerLink]="['/portfolio']" href="#" class="text-light">Portfolio</a></li>
+          <li><a [routerLink]="['/info']" href="#" class="text-light">More</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h5>Contact</h5>
+        <ul class="list-unstyled">
+          <li><a  class="text-light" class="none"><i class="bi bi-geo-alt-fill"></i> Lot VA 38 C Bis Tsiadana</a></li>
+          <li><a  class="text-light" class="none"><i class="bi bi-envelope-fill"></i> fanevahasintsoa&#64;gmail.com</a></li>
+          <li><a  class="text-light" class="none"><i class="bi bi-telephone-fill"></i> 032 98 030 10 / 038 62 135 34</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h5 style="text-align: center;">Suivez-moi</h5>
+        <div class="d-flex justify-content-center align-items-center">
+          <a href="#" class="text-light mr-3">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="#" class="text-light mr-3">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="#" class="text-light mr-3">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="#" class="text-light mr-3">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <img src="/Fa.png" alt="Faneva's picture" class="pic1">
+      <p>&copy; Faneva_ANDRIANAINA</p>
+    </div>
   </div>
 </footer>
