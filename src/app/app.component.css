@@ -36,7 +36,8 @@ header{
   margin-right: 2%;
 }
 .bg-noir{
-  background-color: rgba(0, 0, 0, 0.904);
+  backdrop-filter: blur(10px); /* Flou en arrière-plan */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .bg-bleu{
   background-color: rgb(10, 21, 51);

@@ -47,5 +47,143 @@
       top: calc(100vh * var(--random-y));
       left: calc(100vw * var(--random-x));
     }
-
+    *{
+      margin:0;
+      padding:0;
+  }
+  .bg-bllack{
+    background-color: rgba(0,0,0,0.5);
+  }
+  .voir-live:hover{
+    background-color: rgb(2, 35, 73);
+    color:white;
+  }
+  .image-section1{
+      width:50%;
+  }
+  .section1{
+      color:white;
+  }
+  .section2{
+      background-color: rgba(255, 0, 0, 0.562);
+      display:flex;
+      margin:0 0 0 0;
+      padding:10% 5% 5% 5%;
+      color:white;
+      width:100%;
+      border:2px solid black;
+      box-shadow: 100px 0 0 0  yellow solid;
+      clip-path:polygon(0 0 , 100% 10%, 100% 100%, 0 90%);
+  }
+  .lcom{
+      margin-right: 30%;
+      margin-left: 10%;
+  }
+  .section3{
+      background-color:rgba(230, 107, 6, 0.7);;
+      display:flex;
+      margin:0% 0 0 0;
+      padding:10% 5% 5% 5%;
+      color:white;
+      width:100%;
+      border:2px solid black;
+      box-shadow: 100px 0 0 0  yellow solid;
+      clip-path:polygon(0 10% , 100% 0, 100% 90%, 0 100%);
+  }
+  .section4{
+      padding:0;
+  }
+  .special{
+      color:rgb(230, 107, 6);
+      font-family:arial black;
+  }
+  .proud{
+      color:rgb(230, 107, 6);
+      font-family:arial black;
+      text-decoration: none;
+  }
+  @media screen and (max-width:750px){
+      .section1{
+        flex-direction: column;
+      }
+      .lcom{
+          margin:0;
+          padding:0;
+      }
+  
+      .section3{
+        background-color:rgba(230, 107, 6, 0.7);;
+          display:flex;
+          margin:0% 0 0 0;
+          padding:10% 0% 5% 0%;
+          color:white;
+          width:100%;
+          border:2px solid black;
+          box-shadow: 100px 0 0 0  yellow solid;
+          clip-path:polygon(0 10% , 100% 0, 100% 90%, 0 100%);
+      }
+  }
+  .bg-bllack{
+      background-color: rgba(0,0,0,0.5);
+  }
+  .bg-primaryy{
+    background-color: rgba(11, 157, 214, 0.5);
+    clip-path:polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+  }
+  .titre{
+    display:flex;
+    border-radius: 40px;
+    font-family:arial black;
+    color:white;
+    text-decoration: underline;
+  }
+  .bi-star-fill{
+    color:white;
+  }
+  
+  @keyframes growshrink {
+      25%,
+      75% {
+        scale: 100%;
+      }
+    
+      50% {
+        scale: 200%;
+        color: magenta;
+      }
+    }
+    
+    h1 {
+      animation-duration: 3s;
+      animation-name: slidein;
+    }
+    h1 span {
+      display: inline-block;
+      animation-duration: 3s;
+      animation-name: growshrink;
+    }
+    
+    @keyframes slidein {
+      from {
+        translate: 0 0;
+        scale: 200% 1;
+      }
+    
+      to {
+        translate: 0 0;
+        scale: 100% 1;
+      }
+    }
+    
+    @keyframes growshrink {
+      25%,
+      75% {
+        scale: 100%;
+      }
+    
+      50% {
+        scale: 200%;
+        color: rgb(255, 230, 0);
+      }
+    }
 
