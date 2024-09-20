@@ -1,3 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+    /* Configuration du body */
+    body {
+      margin: 0;
+      height: 100vh;
+      background-color: black;
+    }
+
+    /* Conteneur des étoiles */
+
+    /* Style des étoiles */
+    .star {
+      position: absolute;
+      width: 0px;
+      height: 0px;
+      background-color: white;
+      border-radius: 50%;
+      opacity: 1;
+      animation: moveStar 15s linear infinite;
+    }
+
+    /* Animation du mouvement des étoiles */
+    @keyframes moveStar {
+      0% {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+      100% {
+        transform: translate(calc(200vw - 100px), calc(200vh - 100px));
+        opacity: 0;
+      }
+    }
+
+    /* Ajustements pour que les étoiles aient des vitesses et des animations différentes */
+    .star:nth-child(odd) {
+      animation-duration: 10s;
+      opacity: 1;
+    }
+
+    .star:nth-child(even) {
+      animation-duration: 15s;
+      opacity: 1;
+    }
+
+    /* Générer des étoiles aléatoires en utilisant des coordonnées aléatoires */
+    .star {
+      top: calc(100vh * var(--random-y));
+      left: calc(100vw * var(--random-x));
+    }
 
 

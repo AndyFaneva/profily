@@ -1,3 +1,4 @@
+
 <header>
   <nav class="navbar navbar-expand-lg bg-noir">
     <div class="container-fluid text-white">
@@ -5,16 +6,16 @@
         <span class="navbar-toggler-icon text-white"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand"><img src="/Fa.png" alt="Faneva's picture" class="pic">A.Fax</a>
+        <a class="navbar-brand text-light" style="font-family:arial black"><img src="/Fa.png" alt="Faneva's picture" class="pic">A/Fax</a>
         <ul class="navbar-navv bf mb-2 mb-lg-0 ">
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active">Home</a>
+            <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active">Accueil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/portfolio']" routerLinkActive="active">Portfolio</a>
+            <a class="nav-link" [routerLink]="['/portfolio']" routerLinkActive="active">Projet</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/info']" routerLinkActive="active">More</a>
+            <a class="nav-link" [routerLink]="['/info']" routerLinkActive="active">A_propos</a>
           </li>
         </ul>
       </div>
@@ -24,7 +25,33 @@
     </div>
   </nav>
 </header>
-<div class="container-fluid body bg-bleu">
+<div class="container-fluid body bg-bleu section-p">
+  <div class="stars" style="position:fixed">
+    <!-- Générer des gem avec des positions aléatoires -->
+    <div class="star bi bi-gem" style="--random-x: 0.1; --random-y: 0.2;color:white"></div>
+    <div class="star bi bi-gem" style="--random-x: 0.4; --random-y: 0.5;color:white"></div>
+    <div class="star bi bi-gem" style="--random-x: 0.7; --random-y: 0.3;color:white"></div>
+    <div class="star bi bi-gem" style="--random-x: 0.9; --random-y: 0.8;color:white"></div>
+    <div class="star bi bi-gem" style="--random-x: 0.6; --random-y: 0.6;color:white"></div>
+    <div class="star bi bi-gem" style="--random-x: 0.2; --random-y: 0.7;color:white"></div>
+    <div class="star bi bi-gem" style="--random-x: 0.5; --random-y: 0.2;color:white"></div>
+    <div class="star bi bi-gem" style="--random-x: 0.3; --random-y: 0.4;color:white"></div>
+    <div class="star bi bi-gem" style="--random-x: 0.7; --random-y: 0.7;color:white"></div>
+    <div class="star bi bi-gem" style="--random-x: 0.5; --random-y: 0.2;color:white"></div>
+    <div class="star bi bi-gem" style="--random-x: 0.3; --random-y: 0.4;color:white"></div>
+    <div class="star bi bi-gem" style="--random-x: 0.1; --random-y: 0.2;color:white"></div>
+    <div class="star bi bi-gem" style="--random-x: 0.4; --random-y: 0.5;color:white"></div>
+    <div class="star bi bi-gem" style="--random-x: 0.7; --random-y: 0.3;color:white"></div>
+    <div class="star bi bi-gem" style="--random-x: 0.9; --random-y: 0.8;color:white"></div>
+    <div class="star bi bi-gem" style="--random-x: 0.6; --random-y: 0.6;color:white"></div>
+    <div class="star bi bi-gem" style="--random-x: 0.2; --random-y: 0.7;color:white"></div>
+    <div class="star bi bi-gem" style="--random-x: 0.5; --random-y: 0.2;color:white"></div>
+    <div class="star bi bi-gem" style="--random-x: 0.3; --random-y: 0.4;color:white"></div>
+    <div class="star bi bi-gem" style="--random-x: 0.7; --random-y: 0.7;color:white"></div>
+    <div class="star bi bi-gem" style="--random-x: 0.5; --random-y: 0.2;color:white"></div>
+    <div class="star bi bi-gem" style="--random-x: 0.3; --random-y: 0.4;color:white"></div>
+    <!-- Ajoute plus de gem ici -->
+  </div>
   <router-outlet></router-outlet>
 </div>
 
@@ -34,9 +61,9 @@
       <div class="col-md-4 mb-3">
         <h5 >Navigation</h5>
         <ul class="list-unstyled">
-          <li><a [routerLink]="['/home']" class="text-light">Home</a></li>
-          <li><a [routerLink]="['/portfolio']" href="#" class="text-light">Portfolio</a></li>
-          <li><a [routerLink]="['/info']" href="#" class="text-light">More</a></li>
+          <li><a [routerLink]="['/home']" class="text-light">Accueil</a></li>
+          <li><a [routerLink]="['/portfolio']" href="#" class="text-light">Projet</a></li>
+          <li><a [routerLink]="['/info']" href="#" class="text-light">A_propos</a></li>
         </ul>
       </div>
       <div class="col-md-4 mb-3">

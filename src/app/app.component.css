@@ -1,9 +1,16 @@
-.pic{
- width:3%;
- background-color: white;
- border-radius: 70%;
- margin-right: 1%;
+header{
+  position:fixed;
+  z-index:999;
 }
+.section-p{
+  padding-top:6%;
+}
+.pic{
+  width:3%;
+  background-color: white;
+  border-radius: 70%;
+  margin-right: 1%;
+ }
 .pic1{
   width:3%;
   background-color: white;
@@ -29,7 +36,7 @@
   margin-right: 2%;
 }
 .bg-noir{
-  background-color: rgba(0,0,0);
+  background-color: rgba(0, 0, 0, 0.904);
 }
 .bg-bleu{
   background-color: rgb(10, 21, 51);
@@ -49,9 +56,13 @@ footer{
   color:blue;
   font-size: 20px;
 }
- @media screen and (max-width:500px){
+ @media screen and (max-width:750px){
   header{
-    position: relative;
+    position:fixed;
+    z-index:999;
+  }
+  .section-p{
+    padding-top:15%;
   }
   .navbar-brand{
     display:none;
