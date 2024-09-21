@@ -58,6 +58,10 @@ footer{
   font-size: 20px;
 }
  @media screen and (max-width:750px){
+.pic3{
+  width: 15%;
+  height: auto;
+}
   header{
     position:fixed;
     z-index:999;
@@ -69,10 +73,9 @@ footer{
     display:none;
   }
   .nav-brand1{
-    display:block;
-    margin-left: 75%;
+    display:flex;
+    margin-left: 70%;
     margin-top: -10%;
-    margin-right: 5%;
   }
   .pic{
     background-color: white;
@@ -89,4 +92,5 @@ footer{
     margin:0 auto;
   }
  }
+
   

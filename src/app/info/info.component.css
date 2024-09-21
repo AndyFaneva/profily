@@ -165,4 +165,23 @@
     background-color: transparent;
     padding:10% 0;
     width: 100%;
-  }
+  } .event{
+    background-color: rgb(5, 88, 241);
+    margin-bottom: 2%;
+    border-radius: 40px;
+    padding:1% 7%;
+   }
+   .event1{
+    background-color: rgb(5, 88, 241);
+    padding:5% 7%;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+    cursor: pointer;
+    text-decoration: none;
+    font-family: arial black;
+    margin-top: 10%;
+    font-size: 20px;
+   }
+   .event1:hover{
+background-color: black;
+color:blue;
+   }

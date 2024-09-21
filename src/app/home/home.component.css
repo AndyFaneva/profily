@@ -5,3 +5,17 @@
     text-decoration: none;
     color:none;
 }
+.event{
+    background-color: rgb(5, 88, 241);
+    padding:5% 7%;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+    cursor: pointer;
+    text-decoration: none;
+    font-family: arial black;
+    margin-top: 10%;
+    font-size: 20px;
+   }
+   .event:hover{
+background-color: black;
+color:blue;
+   }
