@@ -141,3 +141,28 @@
       color: rgb(255, 230, 0);
     }
   }
+  .accordion-button{
+    background-color: transparent;
+    color:white;
+    font-family: arial black;
+  }
+  .accordion-button:hover{
+    background-color: rgb(2, 170, 192);
+    color:rgb(8, 8, 8);
+    font-family: arial black;
+  }
+  .accordion-header{
+    background-color: none;
+  }
+  .accordion-body{
+    background-color: none;
+    color:white;
+  }
+  .accordion-item{
+    background-color: transparent;
+  }
+  .accordion{
+    background-color: transparent;
+    padding:10% 0;
+    width: 100%;
+  }
